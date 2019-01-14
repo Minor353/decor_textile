@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Продукт || Decor Textile
+    body
+        .wrapper
+            include ../includes/header.pug
+            main.main
+                section.catalog-main-section_ps
+                    include ../includes/catalog/_catalog-main-section.pug
+                section.breadcrumbs_ps
+                    include ../includes/_breadcrumbs.pug
+                section.description-section_ps
+                    include ../includes/catalog/_description-section.pug
+                section.product-catalog_ps
+                    include ../includes/catalog/_product-catalog.pug
+                section.gallery_ps
+                    include ../includes/_gallery.pug
+                section.service-description_ps
+                    include ../includes/catalog/_service-description.pug
+                section.service-cta_ps
+                    include ../includes/catalog/_service-cta.pug
+            include ../includes/footer.pug   
