@@ -1,0 +1,31 @@
+.main-slider {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.main-slider_wrap {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.main-slider_wrap-item {
+    display: flex;
+    height: 100%;
+    position: relative;
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+}
+
+.main-slider_item-content {
+    margin: auto;
+    z-index: 999;
+}

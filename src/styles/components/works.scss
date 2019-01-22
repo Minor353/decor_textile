@@ -1,0 +1,25 @@
+.works {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.works_title {
+    width: 30%;
+}
+
+.works_tabs-wrap {
+    width: 70%;
+}
+
+.works_tabs {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.works_tabs-item {
+    list-style-type: none;
+}

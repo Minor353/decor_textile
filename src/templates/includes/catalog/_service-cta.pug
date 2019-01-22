@@ -2,12 +2,4 @@
     .service-cta_content
         .service-cta_content-title Закажите прямо сейчас
         .service-cta_content-text Зачем откладывать на потом то, что можно сделать сейчас. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
-    .service-cta_form
-        .service-cta_form-wrap
-            form(action="#", method="post")
-                input(type="text", placeholder="Ваше имя")
-                input(type="text", placeholder="+380 (__) ___ __ __")
-                textarea(name="", placeholder="Напишите, что Вас интересует")
-                .service-cta_form-submit-btn
-                    button(type="submit") Отправить
-                    p *Ваши персональные данные не будут переданы третьим лицам
+        include ../_main-form.pug 
