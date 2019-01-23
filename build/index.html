@@ -10,27 +10,28 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="logo_ps"><a class="logo" href="#"><img src="assets/images/icons/logo.svg" alt="logo"/></a></div>
-        <div class="nav_ps">
-          <nav class="nav">
-            <ul class="nav_wrap">
-              <li class="nav_item"><a class="nav_item-link" href="index.html">ГЛАВНАЯ</a></li>
-              <li class="nav_item"><a class="nav_item-link" href="about.html">О НАС</a></li>
-              <li class="nav_item"><a class="nav_item-link" href="catalog.html">КАТАЛОГ</a></li>
-              <li class="nav_item"><a class="nav_item-link" href="contact.html">КОНТАКТЫ</a></li>
-              <li class="nav_item"><a class="nav_item-link" href="#">ВАКАНСИИ</a></li>
+        <div class="header_wrap">
+          <div class="logo_ps"><a class="logo" href="#"><img src="assets/images/icons/logo.svg" alt="logo"/></a></div>
+          <div class="nav_ps">
+            <nav class="nav">
+              <ul class="nav_wrap">
+                <li class="nav_item"><a class="nav_item-link" href="index.html">ГЛАВНАЯ</a></li>
+                <li class="nav_item"><a class="nav_item-link" href="about.html">О НАС</a></li>
+                <li class="nav_item"><a class="nav_item-link" href="catalog.html">КАТАЛОГ</a></li>
+                <li class="nav_item"><a class="nav_item-link" href="contact.html">КОНТАКТЫ</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="social_ps">
+            <ul class="social">
+              <li class="social_item"><a class="social_item-link social_item-link--insta" href="#"><img src="assets/images/icons/insta.svg" alt="social"/></a></li>
+              <li class="social_item"><a class="social_item-link social_item-link--fb" href="#"><img src="assets/images/icons/fb.svg" alt="social"/></a></li>
+              <li class="social_item"><a class="social_item-link social_item-link--telegram" href="#"><img src="assets/images/icons/telega.svg" alt="social"/></a></li>
             </ul>
-          </nav>
-        </div>
-        <div class="social_ps">
-          <ul class="social">
-            <li class="social_item"><a class="social_item-link social_item-link--insta" href="#"><img src="assets/images/icons/insta.svg" alt="social"/></a></li>
-            <li class="social_item"><a class="social_item-link social_item-link--fb" href="#"><img src="assets/images/icons/fb.svg" alt="social"/></a></li>
-            <li class="social_item"><a class="social_item-link social_item-link--telegram" href="#"><img src="assets/images/icons/telega.svg" alt="social"/></a></li>
-          </ul>
-        </div>
-        <div class="header-tel_ps">
-          <div class="header-tel"><img src="assets/images/icons/phone.svg" alt="icon"/><a class="header-tel_link" href="tel:+">090-123-45-67</a></div>
+          </div>
+          <div class="header-tel_ps">
+            <div class="header-tel"><img src="assets/images/icons/phone.svg" alt="icon"/><a class="header-tel_link" href="tel:+">090-123-45-67</a></div>
+          </div>
         </div>
       </header>
       <main class="main">
@@ -44,8 +45,8 @@
                 </div>
               </li>
               <div class="main-slider_item-control">
-                <div class="main-slider_control-btn main-slider_control-btn--prev"></div>
-                <div class="main-slider_control-btn main-slider_control-btn--next"></div>
+                <div class="main-slider_control-btn main-slider_control-btn--prev"><span></span></div>
+                <div class="main-slider_control-btn main-slider_control-btn--next"><span></span></div>
               </div>
             </ul>
           </div>
@@ -81,50 +82,66 @@
           </section>
           <section class="features_ps">
             <div class="features">
-              <div class="features_content"><img class="features_content-img" src="#" alt="features"/>
-                <div class="features_content-decor"><img src="#" alt="decor"/></div>
-                <div class="features_content-decor"><img src="#" alt="decor"/></div>
-              </div>
               <div class="features_text">
-                <h2 class="features_text-title">Студия дизайна текстиля</h2>
-                <p class="features_text-article">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p><a class="link-btn">О НАС</a>
+                <h2 class="features_text-title">Студия текстильного дизайна</h2>
+                <p class="features_text-article">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p><a class="link-btn link-btn--position" href="#">О НАС</a>
                 <div class="features_text-decor">
                   <div class="features_decor-item">
-                    <div class="features_decor-item-num">5000</div>
-                    <div class="features_decor-item-text">УСТАНОВЛЕНЫХ КАРНИЗОВ </div>
+                    <div class="features_decor-item-img"> </div>
+                    <div class="features_decor-item-text">20 лет опыта и работы</div>
                   </div>
                   <div class="features_decor-item">
-                    <div class="features_decor-item-num">3256</div>
-                    <div class="features_decor-item-text">ДИЗАЙН ПРОЕКТОВ</div>
+                    <div class="features_decor-item-img"> </div>
+                    <div class="features_decor-item-text">2973 обслуженных клиентов</div>
                   </div>
                   <div class="features_decor-item">
-                    <div class="features_decor-item-num">287</div>
-                    <div class="features_decor-item-text">ДОВОЛЬНЫХ КЛИЕНТОВ</div>
+                    <div class="features_decor-item-img"> </div>
+                    <div class="features_decor-item-text">Более 8000 м ткани в наличии</div>
+                  </div>
+                  <div class="features_decor-item">
+                    <div class="features_decor-item-img"> </div>
+                    <div class="features_decor-item-text">Обновление коллекции каждые 2 недели</div>
+                  </div>
+                  <div class="features_decor-item">
+                    <div class="features_decor-item-img"> </div>
+                    <div class="features_decor-item-text">Ежегодное участие в выставках Heimtextil, Home textile</div>
+                  </div>
+                  <div class="features_decor-item">
+                    <div class="features_decor-item-img"> </div>
+                    <div class="features_decor-item-text">Прямые поставки с 23 европейских текстильных фабрик</div>
+                  </div>
+                  <div class="features_decor-item">
+                    <div class="features_decor-item-img"> </div>
+                    <div class="features_decor-item-text">Официальный представитель фирм-производителей карнизов, аксессуаров и солнцезащитных систем</div>
+                  </div>
+                  <div class="features_decor-item">
+                    <div class="features_decor-item-img"> </div>
+                    <div class="features_decor-item-text">Более 3000 м профессионального столового белья в наличии</div>
                   </div>
                 </div>
               </div>
             </div>
           </section>
-          <section class="catalog_ps">
-            <div class="catalog">
-              <h4 class="catalog_title">каталог продукции</h4>
-              <ul class="catalog_wrap">
-                <li class="catalog_item"><a class="catalog_item-link" href="#"><img class="catalog_item-img" src="#" alt="catalog"/>
-                    <div class="catalog_item-text">Шторы и гардины</div></a></li>
-                <li class="catalog_item"><a class="catalog_item-link" href="#"><img class="catalog_item-img" src="#" alt="catalog"/>
-                    <div class="catalog_item-text">Карнизы и аксессуары</div></a></li>
-                <li class="catalog_item"><a class="catalog_item-link" href="#"><img class="catalog_item-img" src="#" alt="catalog"/>
-                    <div class="catalog_item-text">Текстиль для ресторанов</div></a></li>
-                <li class="catalog_item"><a class="catalog_item-link" href="#"><img class="catalog_item-img" src="#" alt="catalog"/>
-                    <div class="catalog_item-text">Текстиль для гостиниц</div></a></li>
-                <li class="catalog_item"><a class="catalog_item-link" href="#"><img class="catalog_item-img" src="#" alt="catalog"/>
-                    <div class="catalog_item-text">Солнцезащита</div></a></li>
-                <li class="catalog_item"><a class="catalog_item-link" href="#"><img class="catalog_item-img" src="#" alt="catalog"/>
-                    <div class="catalog_item-text">Униформа</div></a></li>
-              </ul>
-            </div>
-          </section>
         </div>
+        <section class="catalog_ps">
+          <div class="catalog">
+            <h4 class="catalog_title">каталог продукции</h4>
+            <ul class="catalog_wrap">
+              <li class="catalog_item"><a class="catalog_item-link" href="#"><img class="catalog_item-img" src="assets/images/content/IMG_1174.png" alt="catalog"/>
+                  <div class="catalog_item-text">Шторы и гардины</div></a></li>
+              <li class="catalog_item"><a class="catalog_item-link" href="#"><img class="catalog_item-img" src="assets/images/content/Изображение 231.png" alt="catalog"/>
+                  <div class="catalog_item-text">Карнизы и аксессуары</div></a></li>
+              <li class="catalog_item"><a class="catalog_item-link" href="#"><img class="catalog_item-img" src="assets/images/content/Mask Group 22.png" alt="catalog"/>
+                  <div class="catalog_item-text">Текстиль для ресторанов</div></a></li>
+              <li class="catalog_item"><a class="catalog_item-link" href="#"><img class="catalog_item-img" src="assets/images/content/4t8g91nzBr0.png" alt="catalog"/>
+                  <div class="catalog_item-text">Текстиль для гостиниц</div></a></li>
+              <li class="catalog_item"><a class="catalog_item-link" href="#"><img class="catalog_item-img" src="assets/images/content/IMG_0629 (2).png" alt="catalog"/>
+                  <div class="catalog_item-text">Солнцезащита</div></a></li>
+              <li class="catalog_item"><a class="catalog_item-link" href="#"><img class="catalog_item-img" src="assets/images/content/NoPath - Copy (124).png" alt="catalog"/>
+                  <div class="catalog_item-text">Униформа</div></a></li>
+            </ul>
+          </div>
+        </section>
         <div class="section-bg_second">
           <section class="works_ps">
             <div class="works">
@@ -141,19 +158,19 @@
               </div>
               <div class="works_gallery">
                 <ul class="works_gallery-wrap">
-                  <li class="works_gallery-item"><img src="#" alt="gallery"/></li>
-                  <li class="works_gallery-item"><img src="#" alt="gallery"/></li>
-                  <li class="works_gallery-item"><img src="#" alt="gallery"/></li>
-                  <li class="works_gallery-item"><img src="#" alt="gallery"/></li>
-                  <li class="works_gallery-item"><img src="#" alt="gallery"/></li>
-                  <li class="works_gallery-item"><img src="#" alt="gallery"/></li>
+                  <li class="works_gallery-item"><img src="assets/images/content/_MG_5989.png" alt="gallery"/></li>
+                  <li class="works_gallery-item"><img src="assets/images/content/DSC00779.png" alt="gallery"/></li>
+                  <li class="works_gallery-item"><img src="assets/images/content/DSC00638.png" alt="gallery"/></li>
+                  <li class="works_gallery-item"><img src="assets/images/content/49742324.png" alt="gallery"/></li>
+                  <li class="works_gallery-item"><img src="assets/images/content/137.1.png" alt="gallery"/></li>
+                  <li class="works_gallery-item"><img src="assets/images/content/IMG_0469 (3).png" alt="gallery"/></li>
                 </ul>
               </div>
             </div>
           </section>
           <section class="offer_ps">
             <div class="offer">
-              <div class="offer_decor"><img src="#" alt="offer"/></div>
+              <div class="offer_decor"><img src="assets/images/icons/discount.svg" alt="offer"/></div>
               <div class="offer_text">
                 <div class="offer_text-title">Акция для новых клиентов</div>
                 <div class="offer_text-subtitle">ОСТАВЬ ЗАЯВКУ И ПОЛУЧИ СКИДКУ 1000 грн</div>

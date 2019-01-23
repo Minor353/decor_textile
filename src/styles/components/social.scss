@@ -4,4 +4,10 @@
 
 .social_item {
     list-style-type: none;
+    margin-right: 29px;
 }
+
+.social_item:last-child {
+    margin-right: 0;
+}
+

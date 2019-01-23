@@ -1,6 +1,6 @@
 .main-slider {
     height: 100vh;
-    width: 100vw;
+    margin-bottom: -40px;
     overflow: hidden;
     box-sizing: border-box;
 }
@@ -9,6 +9,7 @@
     height: 100%;
     padding: 0;
     margin: 0;
+    position: relative;
 }
 
 .main-slider_wrap-item {
@@ -27,5 +28,72 @@
 
 .main-slider_item-content {
     margin: auto;
+    width: 1170px;
     z-index: 999;
+}
+
+.main-slider_content-title {
+    font-family: 'Raleway-Bold', sans-serif;
+    color: #fff;
+    font-size: 60px;
+    width: 601px;
+    margin-bottom: 25px;
+}
+
+.main-slider_content-subtitle {
+    font-family: 'Raleway-Regular', sans-serif;
+    color: #fff;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.main-slider_item-control {
+    position: absolute;
+    right: 0;
+    top: 45%;
+    z-index: 999999;
+}
+
+.main-slider_control-btn {
+    width: 80px;
+    height: 80px;
+    background-color: #ffffffab;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s;
+    span {
+        margin: auto;
+        width: 15px;
+        height: 15px;
+        border-left: 1px solid #000;
+        border-bottom: 1px solid #000;
+        transition: 0.3s
+    }
+}
+
+.main-slider_control-btn:hover {
+    background-color: #9e1436ba;
+    transition: 0.3s;
+    
+}
+
+.main-slider_control-btn:hover span {
+    border-color: #fff;
+    transition: 0.3s
+}
+
+
+
+.main-slider_control-btn--prev {
+    margin-left: 80px;
+    span {
+        transform: rotate(-135deg);
+    }
+}
+
+.main-slider_control-btn--next {
+    margin-right: 80px;
+    span {
+        transform: rotate(45deg);
+    }
 }
