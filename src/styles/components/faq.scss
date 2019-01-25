@@ -1,0 +1,92 @@
+.faq {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq_form-wrapper {
+    width: 577px;
+}
+
+.faq_form-title {
+    font-family: 'TrajanPro3-Regular';
+    font-size: 35px;
+    color: #2E2E2E;
+    line-height: 49px;
+    width: 407px;
+    margin-bottom: 50px;
+}
+
+.faq_content {
+    width: 574px;
+    box-sizing: border-box;
+}
+
+.faq_content-title {
+    font-family: 'TrajanPro3-Regular';
+    font-size: 35px;
+    color: #2E2E2E;
+    line-height: 49px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.faq_list-item-content {
+    margin-bottom: 40px;
+}
+
+.faq_list-content-title {
+    padding: 15px 50px;
+    border-radius: 1px;
+    background-color: #F7F6F6;
+    font-family: 'Raleway-Light';
+    color: #262626;
+}
+
+.faq_list-content-title--active {
+    background-color: #B0D56A;
+}
+
+.faq_list-content-text {
+    font-family: 'Raleway-Regular';
+    color: #929292;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 20px 50px;
+    background-color: rgba(132, 224, 143, 0.15);
+}
+
+.faq_list-content-text--disable {
+    display: none;
+}
+
+
+.faq_form-wrapper {
+    .form {
+        padding: 50px;
+        background-color: #F7F6F6;
+        box-shadow: 0px 10px 30px rgba(55, 55, 55, 0.2);
+    }
+
+    input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px 40px;
+        border-color: transparent;
+        margin-bottom: 30px;
+        box-shadow: 0px 10px 30px rgba(55, 55, 55, 0.2);
+    }
+
+    textarea {
+        width: 100%;
+        min-height: 170px;
+        box-sizing: border-box;
+        padding: 20px 40px;
+        border-color: transparent;
+        margin-bottom: 30px;
+        box-shadow: 0px 10px 30px rgba(55, 55, 55, 0.2);
+        resize: none;
+        margin-bottom: 50px;
+    }
+}

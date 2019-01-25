@@ -1,0 +1,32 @@
+.main-section {
+    background-image: url('../images/content/bg_1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 110px 0;
+}
+
+.main-section_content {
+    width: 1046px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-section_name {
+    font-family: 'Raleway-Regular';
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.main-section_title {
+    font-family: 'TrajanPro3-Regular';
+    font-size: 35px;
+    color: #fff;
+}
+
+.main-section_description {
+    font-family: 'Raleway-Regular';
+    font-size: 16px;
+    color: #fff;
+}

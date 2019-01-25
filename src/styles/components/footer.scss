@@ -3,4 +3,38 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.footer {
+    background-color: #F2F2F2;
+}
+
+.footer_description {
+    font-family: 'Raleway-Regular';
+    font-size: 18px;
+    color: #2A2A2A;
+}
+
+.footer_btn-up {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.footer_btn-up-text {
+    font-family: 'Raleway-Bold';
+    font-size: 16px;
+    color: #2A2A2A;
+    margin-right: 38px;
+}
+
+.footer_btn {
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/icons/arrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

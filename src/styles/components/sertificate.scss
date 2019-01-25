@@ -1,0 +1,44 @@
+.sertificate {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.sertificate_title {
+    font-family: 'TrajanPro3-Regular';
+    font-size: 35px;
+    color: #262626;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.sertificate_list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sertificate_list-item {
+    list-style-type: none;
+    width: 278px;
+    height: 300px;
+}
+
+.sertificate_wrap {
+    margin-bottom: 100px;
+}
+
+.sertificate_item-text {
+    font-family: 'Raleway-Bold';
+    font-size: 16px;
+    color: #262626;
+    padding: 34px 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: -90px;
+    position: relative;
+}
+
+.sertificate_item-link {
+    text-decoration: none;
+}

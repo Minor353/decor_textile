@@ -5,11 +5,12 @@ html(lang="ru")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Контакты || Decor Textile
+        link(rel='stylesheet' href='assets/styles/app.min.css')
     body
         .wrapper
             include ../includes/header.pug
             main.main
-                section.main-section_ps
+                section.content-main-section_ps
                     include ../includes/contact/_content-main-section.pug
                 section.breadcrumbs_ps
                     include ../includes/_breadcrumbs.pug

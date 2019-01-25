@@ -1,0 +1,44 @@
+.product-catalog {
+    width: 1170px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.product-catalog_title {
+    text-align: center;
+    font-family: 'TrajanPro3-Regular';
+    font-size: 35px;
+    color: #2E2E2E;
+    margin-bottom: 100px;
+}
+
+.product-catalog_list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-catalog_list-item {
+    list-style-type: none;
+    width: 287px;
+    height: 300px;
+    margin-bottom: 30px;
+    border-left: 2px solid #fff;
+    border-right: 3px solid #fff;
+}
+
+.product-catalog_item-title {
+    font-family: 'Raleway-Bold';
+    font-size: 20px;
+    color: #262626;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 86px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: -87px;
+}

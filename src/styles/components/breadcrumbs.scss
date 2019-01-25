@@ -1,0 +1,22 @@
+.breadcrumbs {
+    padding: 17px 0;
+    background-color: #F5F5F5;
+}
+
+.breadcrumbs_wrap {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+}
+
+.breadcrumbs_item {
+    list-style-type: none;
+}
+
+.breadcrumbs_item-link {
+    text-decoration: none;
+    color: #929292;
+    font-family: 'Raleway-Regular';
+    font-size: 14px;
+}

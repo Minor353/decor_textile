@@ -2,4 +2,41 @@
     width: 1170px;
     margin: 0 auto;
     display: flex;
+    margin-top: 180px;
+}
+
+.clients_text {
+    width: 49%;
+    height: 200px;
+    border-left: 5px solid #B0D56A;
+    border-bottom: 5px solid #B0D56A;
+}
+
+.clients_text-title {
+    font-family: 'TrajanPro3-Regular';
+    font-size: 35px;
+    color: #262626;
+    text-align: right;
+}
+
+.clients_list {
+    width: 70%;
+    height: 248px;
+    padding-left: 135px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: -85px;
+}
+
+.clients_list-item {
+    width: 150px;
+    list-style-type: none;
+    height: 100px;
+    margin-right: 50px;
+}
+
+.clients_list-item:nth-child(3), .clients_list-item:nth-child(6) {
+    margin-right: 0;
 }

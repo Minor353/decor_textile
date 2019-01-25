@@ -1,7 +1,24 @@
-.header {
+.main-page .header {
     z-index: 999999;
     position: relative;
     background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+}
+
+.header {
+    position: static;
+    background: #F7F6F6;
+}
+
+.main-page .header_wrap {
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99999;
+    position: relative;
+    padding-top: 27px;
+    margin-bottom: -115px;
 }
 
 .header_wrap {
@@ -12,6 +29,6 @@
     justify-content: space-between;
     z-index: 99999;
     position: relative;
-    padding-top: 27px;
-    margin-bottom: -100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }

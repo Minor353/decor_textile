@@ -1,0 +1,61 @@
+.description-section {
+    width: 1170px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.description-section_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.description-section_title {
+    width: 490px;
+    height: 300px;
+    background-image: url('../images/content/service_content.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    h5 {
+        font-family: 'TrajanPro3-Regular';
+        font-size: 35px;
+        color: #262626;
+        line-height: 49px;
+        margin: auto 0;
+        margin-left: 50px;
+    }
+}
+
+.description-section_content {
+    width: 600px;
+}
+
+.description-section_content-text {
+    font-family: 'Raleway-Regular';
+    font-size: 16px;
+    color: #262626;
+    line-height: 30px;
+}
+
+.description-section_item-num {
+    font-family: 'TrajanPro3-Bold';
+    font-weight: 700;
+    color: #C01C3F;
+    font-size: 24px;
+}
+
+.description-section_item-text {
+    font-family: 'TrajanPro3-Bold';
+    font-weight: 700;
+    color: #262626;
+    font-size: 16px;
+}
+
+.description-section_content-date {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 39px;
+}

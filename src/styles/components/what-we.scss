@@ -1,0 +1,64 @@
+.what-we {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.what-we_info {
+    width: 682px;
+}
+
+.what-we_info-wrap {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.what-we_info-item {
+    list-style-type: none;
+    margin-bottom: 50px;
+}
+
+.what-we_info-item-num {
+    font-family: 'Rubik-Regular';
+    font-size: 43px;
+    color: #fff;
+    padding: 15px 20px;
+    background-color: #C01C3F;
+    width: max-content;
+    margin-left: 20px;
+    margin-bottom: -40px;
+    position: relative;
+}
+
+.what-we_info-item-text {
+    font-family: 'Raleway-Regular';
+    font-size: 20px;
+    color: #262626;
+    background-color: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(55, 55, 55, 0.2);
+    padding: 70px 30px 50px 30px;
+    width: 303px;
+    box-sizing: border-box;
+}
+
+.what-we_description {
+    width: 404px;
+}
+
+.what-we_description-title {
+    font-family: 'TrajanPro3-Regular';
+    font-size: 35px;
+    color: #262626;
+    margin-bottom: 100px;
+}
+
+.what-we_description-text {
+    font-family: 'Raleway-Regular';
+    font-size: 16px;
+    color: #929292;
+    line-height: 30px;
+}

@@ -1,3 +1,15 @@
+.main-page .header-tel img:nth-child(2) {
+    display: none;
+}
+
+.main-page .header-tel img:nth-child(1) {
+    display: block;
+}
+
+.header-tel img:nth-child(1) {
+    display: none;
+}
+
 .header-tel {
     display: flex;
     align-items: center;
@@ -6,9 +18,18 @@
     border-radius: 1px; 
 }
 
-.header-tel_link {
+.main-page .header-tel_link {
     text-decoration: none;
     color: #fff;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-left: 20px;
+    letter-spacing: 1px;
+}
+
+.header-tel_link {
+    text-decoration: none;
+    color: #000;
     font-family: sans-serif;
     font-size: 16px;
     margin-left: 20px;
