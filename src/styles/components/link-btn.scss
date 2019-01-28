@@ -5,6 +5,9 @@
     text-decoration: none;
     padding: 15px 53px;
     background: linear-gradient(96deg, #C01C3F 0%,#9E1436 100%); 
+    transition: 0.4s;
+    cursor: pointer;
+    border: 1px solid transparent;
 }
 
 .link-btn--position {
@@ -12,4 +15,11 @@
     margin: 0 auto;
     display: block;
     padding: 15px 115px;
+}
+
+.link-btn:hover {
+    background: #fff;
+    color: #9E1436;
+    border-color: #9E1436;
+    transition: 0.4s;
 }

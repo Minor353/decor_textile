@@ -1,13 +1,17 @@
-.main-page .social_item-link img:nth-child(2) {
-    display: none;
+.main-page .social_item-link .a {
+    fill: #fff;
+    transition: 0.4s;
 }
 
-.main-page .social_item-link img:nth-child(1) {
-    display: block;
+.social_item-link .a {
+    fill: #000;
+    transition: 0.4s;
 }
 
-.social_item-link img:nth-child(1) {
-    display: none;
+
+.social_item-link:hover .a {
+    fill: #C01C3F;
+    transition: 0.4s;
 }
 
 .social {
