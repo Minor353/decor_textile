@@ -18,6 +18,7 @@
     width: 380px;
     list-style-type: none;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .catalog_item:nth-child(1), .catalog_item:nth-child(2), .catalog_item:nth-child(3) {
@@ -36,6 +37,12 @@
 .catalog_item-img {
     height: 400px;
     display: block;
+    transition: 0.4s;
+}
+
+.catalog_item:hover .catalog_item-img {
+    transform: scale3d(1.1, 1.1, 1.1);
+    transition: 0.4s;
 }
 
 .catalog_item-text {
@@ -46,6 +53,12 @@
     background-color: rgba(255, 255, 255, 0.8);
     margin-top: -83px;
     position: relative;
+    transition: 0.4s;
+}
+
+.catalog_item:hover  .catalog_item-text {
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: 0.4s;
 }
 
 .catalog_item-link {

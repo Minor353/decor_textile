@@ -42,6 +42,8 @@
     background-color: #F7F6F6;
     font-family: 'Raleway-Light';
     color: #262626;
+    transition: 0.4s;
+    cursor: pointer;
 }
 
 .faq_list-content-title--active {
@@ -89,4 +91,10 @@
         resize: none;
         margin-bottom: 50px;
     }
+}
+
+
+.faq_list-content-title:hover {
+    background-color: #ECFAED;
+    transition: 0.4s;
 }

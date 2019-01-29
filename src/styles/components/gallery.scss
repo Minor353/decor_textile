@@ -46,7 +46,27 @@
     max-height: 300px;
     overflow: hidden;
     margin-right: 20px;
+    position: relative;
 }
+
+.gallery_list-item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url('../images/icons/plus.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 100px;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+
 
 .gallery_list-item:first-child {
     opacity: 0.2;
@@ -61,4 +81,18 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 0.4s;
+}
+
+.gallery_list-item:hover .gallery_list-img {
+    filter: brightness(50%);
+    transition: 0.4s;
+}
+
+
+
+.gallery_list-item:hover::after {
+    opacity: 1;
+    transition: 0.4s;
+    cursor: pointer;
 }

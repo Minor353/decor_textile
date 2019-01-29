@@ -36,6 +36,13 @@
     color: #262626;
     text-decoration: none;
     margin-left: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.works_tabs-item-link:hover {
+    color: #B0D56A;
+    transition: 0.5s;
 }
 
 .works_gallery {
