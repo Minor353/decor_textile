@@ -5,6 +5,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 50px 0;
+    @include min-desc(){
+        width: 100%;
+        box-sizing: border-box;
+        padding: 50px 30px;
+    }
 }
 
 .footer {
@@ -15,6 +20,9 @@
     font-family: 'Raleway-Regular';
     font-size: 18px;
     color: #2A2A2A;
+    @include min-desc(){
+        font-size: 12px;
+    }
 }
 
 .footer_btn-up {

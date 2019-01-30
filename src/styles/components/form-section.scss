@@ -2,8 +2,13 @@
     width: 1170px;
     margin: 0 auto;
     position: relative;
+    @include min-desc(){
+        width: 100%;
+    }
     
 }
+
+
 
 .form-section_bg {
     position: absolute;
@@ -25,6 +30,10 @@
     background-position: center;
     background-size: cover;
     padding: 100px 0;
+    @include min-desc(){
+        box-sizing: border-box;
+        padding: 100px 30px;
+    }
 }
 
 
@@ -47,6 +56,8 @@
     justify-content: space-between;
 }
 
+
+
 .form_input {
     font-family: 'Raleway-Light';
     font-size: 14px;
@@ -63,6 +74,10 @@
     padding: 20px 50px;
     width: 38%;
     height: 120px;
+    resize: none;
+    @include min-desc(){
+        height: 95px;
+    }
 }
 
 .from_title {
@@ -73,6 +88,9 @@
     width: 407px;
     margin: 0 auto;
     margin-bottom: 50px;
+    @include min-desc(){
+        font-size: 28px;
+    }
 }
 
 .form_btn-submit {
@@ -94,4 +112,19 @@
     text-align: center;
     margin-top: 30px;
     width: 100%;
+}
+
+
+@media screen and (max-width:940px) {
+    .form_input-wrap {
+        width: 100%;
+    }
+
+    .form_input {
+        margin-bottom: 30px;
+    }
+
+    .form_textarea {
+        width: 100%;
+    }
 }

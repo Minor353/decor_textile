@@ -10,6 +10,9 @@
     width: 1046px;
     margin: 0 auto;
     text-align: center;
+    @include min-desc(){
+        width: 650px;
+    }
 }
 
 .catalog-main-section_title {
@@ -18,6 +21,9 @@
     color: #FFFFFF;
     line-height: 49px;
     margin-bottom: 30px;
+    @include min-desc(){
+        font-size: 28px;
+    }
 }
 
 .catalog-main-section_subtitle {

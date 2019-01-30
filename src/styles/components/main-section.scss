@@ -10,6 +10,11 @@
     width: 1046px;
     margin: 0 auto;
     text-align: center;
+    @include min-desc(){
+        width: 650px;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
 }
 
 .main-section_name {

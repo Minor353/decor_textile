@@ -19,6 +19,13 @@
     position: relative;
     padding-top: 27px;
     margin-bottom: -115px;
+
+    @include min-desc(){
+        width: 100%;
+        padding: 0 30px;
+        padding-top: 27px;
+        box-sizing: border-box;
+    }
 }
 
 .header_wrap {
@@ -31,4 +38,10 @@
     position: relative;
     padding-top: 15px;
     padding-bottom: 15px;
+    @include min-desc(){
+        width: 100%;
+        padding: 0 30px;
+        padding-top: 5px;
+        box-sizing: border-box;
+    }
 }

@@ -3,10 +3,20 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    @include min-desc(){
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+        flex-direction: column;
+    }
 }
 
 .what-we_info {
     width: 682px;
+    @include min-desc(){
+        width: 100%;
+        box-sizing: border-box;
+    }
 }
 
 .what-we_info-wrap {
@@ -20,6 +30,9 @@
 .what-we_info-item {
     list-style-type: none;
     margin-bottom: 50px;
+    @include min-desc(){
+        width: 48%;
+    }
 }
 
 .what-we_info-item-num {
@@ -43,10 +56,18 @@
     padding: 70px 30px 50px 30px;
     width: 303px;
     box-sizing: border-box;
+    @include min-desc(){
+        width: 100%;
+    }
 }
 
 .what-we_description {
     width: 404px;
+    @include min-desc(){
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 60px;
+    }
 }
 
 .what-we_description-title {
@@ -54,6 +75,10 @@
     font-size: 35px;
     color: #262626;
     margin-bottom: 100px;
+    @include min-desc(){
+        margin-bottom: 30px;
+        text-align: center;
+    }
 }
 
 .what-we_description-text {

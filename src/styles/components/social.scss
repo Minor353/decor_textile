@@ -14,13 +14,27 @@
     transition: 0.4s;
 }
 
+.social_ps {
+    @include tablet(){
+        display: none;
+    }
+}
+
 .social {
     display: flex;
+    padding: 0;
 }
 
 .social_item {
     list-style-type: none;
     margin-right: 29px;
+
+    svg {
+        @include min-desc(){
+            width: 25px;
+            height: 25px;
+        }
+    }
 }
 
 .social_item:last-child {

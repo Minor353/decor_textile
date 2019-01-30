@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Продукт || Decor Textile</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css"/>
     <link rel="stylesheet" href="assets/styles/app.min.css"/>
   </head>
   <body>
@@ -31,6 +32,13 @@
           </div>
           <div class="header-tel_ps">
             <div class="header-tel"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><defs><style>.a{fill:#fff;}</style></defs><path class="a" d="M.566-11.518a.556.556,0,0,0-.41.235.743.743,0,0,0-.147.44,13.379,13.379,0,0,0,1.847,6.86,13.668,13.668,0,0,0,4.9,4.9,13.379,13.379,0,0,0,6.86,1.847.743.743,0,0,0,.44-.147.556.556,0,0,0,.235-.41l.7-3.049a.662.662,0,0,0-.059-.469.631.631,0,0,0-.352-.322L11.3-3.045a.744.744,0,0,0-.44-.044.589.589,0,0,0-.381.249L9.038-1.081a10.3,10.3,0,0,1-3.064-2.14A10.77,10.77,0,0,1,3.85-6.27L5.608-7.736A.7.7,0,0,0,5.843-8.1a.731.731,0,0,0-.029-.454L4.407-11.84a.647.647,0,0,0-.322-.322.662.662,0,0,0-.469-.059Z" transform="translate(-0.009 12.24)"/></svg><a class="header-tel_link" href="tel:+">090-123-45-67</a></div>
+          </div>
+          <div class="burger_ps">
+            <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+              <path class="line top" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"></path>
+              <path class="line middle" d="m 70,50 h -40"></path>
+              <path class="line bottom" d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"></path>
+            </svg>
           </div>
         </div>
       </header>
@@ -133,12 +141,12 @@
             </div>
             <div class="gallery_list">
               <ul class="gallery_list-wrap">
-                <li class="gallery_list-item"><a class="gallery_list-link" href="#"><img class="gallery_list-img" src="assets/images/content/54801900.png" alt="gallery"/></a></li>
-                <li class="gallery_list-item"><a class="gallery_list-link" href="#"><img class="gallery_list-img" src="assets/images/content/Group 506.png" alt="gallery"/></a></li>
-                <li class="gallery_list-item"><a class="gallery_list-link" href="#"><img class="gallery_list-img" src="assets/images/content/35647719.png" alt="gallery"/></a></li>
-                <li class="gallery_list-item"><a class="gallery_list-link" href="#"><img class="gallery_list-img" src="assets/images/content/54801900.png" alt="gallery"/></a></li>
-                <li class="gallery_list-item"><a class="gallery_list-link" href="#"><img class="gallery_list-img" src="assets/images/content/Group 506.png" alt="gallery"/></a></li>
-                <li class="gallery_list-item"><a class="gallery_list-link" href="#"><img class="gallery_list-img" src="assets/images/content/35647719.png" alt="gallery"/></a></li>
+                <li class="gallery_list-item"><a class="gallery_list-link" href="assets/images/content/54801900.png" data-fancybox="gallery"><img class="gallery_list-img" src="assets/images/content/54801900.png" alt="gallery"/></a></li>
+                <li class="gallery_list-item"><a class="gallery_list-link" href="assets/images/content/Group 506.png" data-fancybox="gallery"><img class="gallery_list-img" src="assets/images/content/Group 506.png" alt="gallery"/></a></li>
+                <li class="gallery_list-item"><a class="gallery_list-link" href="assets/images/content/35647719.png" data-fancybox="gallery"><img class="gallery_list-img" src="assets/images/content/35647719.png" alt="gallery"/></a></li>
+                <li class="gallery_list-item"><a class="gallery_list-link" href="assets/images/content/54801900.png" data-fancybox="gallery"><img class="gallery_list-img" src="assets/images/content/54801900.png" alt="gallery"/></a></li>
+                <li class="gallery_list-item"><a class="gallery_list-link" href="assets/images/content/Group 506.png" data-fancybox="gallery"><img class="gallery_list-img" src="assets/images/content/Group 506.png" alt="gallery"/></a></li>
+                <li class="gallery_list-item"><a class="gallery_list-link" href="assets/images/content/35647719.png" data-fancybox="gallery"><img class="gallery_list-img" src="assets/images/content/35647719.png" alt="gallery"/></a></li>
               </ul>
             </div>
           </div>
@@ -181,6 +189,8 @@
             <div class="footer_btn"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"><defs><style>.a{fill:#b0d56a;}.b{fill:none;stroke:#262626;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><g transform="translate(-1415 -8029)"><rect class="a" width="50" height="50" rx="1" transform="translate(1415 8029)"/><path class="b" d="M14081.936,4700.591l-12.177-12.177-12.177,12.177" transform="translate(-12630.141 3359.43)"/></g></svg></div></a>
         </div>
       </footer>
+      <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
     </div>
   </body>
 </html>

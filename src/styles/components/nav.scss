@@ -1,3 +1,9 @@
+.nav_ps {
+    @include min-desc(){
+        display: none;
+    }
+}
+
 .nav_wrap {
     display: flex;
 }

@@ -5,6 +5,16 @@
     padding: 0;
     justify-content: space-between;
     margin-bottom: 100px;
+    @include min-desc(){
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+        justify-content: space-around;
+    }
+    @include tablet(){
+     flex-direction: column;
+     align-items: center;   
+    }
 }
 
 .services_ps {
@@ -24,11 +34,26 @@
     background-color: #fff;
     border: 7px solid #fff;
     border-bottom: 0px solid transparent;
+    @include min-desc(){
+        width: 250px;
+    }
+    @include tablet(){
+        width: 100%;  
+        margin-bottom: 30px; 
+    }
 }
 
 
 .services_item-content {
     height: 320px;
+    transition: 0.4s;
+    @include min-desc(){
+        height: 200px;
+    }
+}
+
+.services_item-content:hover {
+    filter: brightness(50%);
     transition: 0.4s;
 }
 
@@ -60,6 +85,13 @@
     font-size: 17px;
     line-height: 28px;
     padding: 50px;
+    @include min-desc(){
+        padding: 10px;
+        font-size: 14px;
+    }
+    @include tablet(){
+        font-size: 18px;   
+    }
 }
 
 .services_item-link {
@@ -68,11 +100,17 @@
     box-shadow: 0px 5px 30px #bfbfbf;
     position: relative;
     cursor: pointer;
+    @include min-desc(){
+        padding: 18px 30px;
+    }
     a {
         font-family: 'Raleway-Bold';
         font-size: 20px;
         color: #262626;
         text-decoration: none;
+        @include min-desc(){
+            font-size: 16px;
+        }
         
     }
 }

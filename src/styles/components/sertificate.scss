@@ -1,6 +1,11 @@
 .sertificate {
     width: 1170px;
     margin: 0 auto;
+    @include min-desc(){
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
 }
 
 .sertificate_title {
@@ -17,12 +22,24 @@
     margin: 0;
     display: flex;
     justify-content: space-between;
+    @include min-desc(){
+        flex-wrap: wrap;
+    }
 }
 
 .sertificate_list-item {
     list-style-type: none;
     width: 278px;
     height: 300px;
+    @include min-desc(){
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 .sertificate_wrap {
@@ -37,6 +54,9 @@
     background-color: rgba(255, 255, 255, 0.8);
     margin-top: -90px;
     position: relative;
+    @include min-desc(){
+        background-color: rgba(243, 238, 238, 0.8);
+    }
 }
 
 .sertificate_item-link {

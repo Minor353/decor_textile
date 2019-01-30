@@ -2,6 +2,10 @@
     position: relative;
     overflow: hidden;
     padding: 60px 0;
+    @include min-desc(){
+        padding: 60px 30px;
+    }
+
 }
 
 .offer {
@@ -14,6 +18,20 @@
     box-shadow: 0px 15px 30px rgba(67, 67, 67, 0.3);
     padding: 50px 97px 50px 73px;
     box-sizing: border-box;
+    @include min-desc(){
+        width: 100%;
+        box-sizing: border-box;
+        padding: 40px 30px 40px 30px;
+    }
+    @include pretablet(){
+        flex-direction: column;
+    }
+}
+
+.offer_text {
+    @include pretablet(){
+     margin: 40px 0;   
+    }
 }
 
 .offer_text-title {
@@ -22,6 +40,11 @@
     color: #262626;
     width: 356px;
     margin-bottom: 30px;
+    @include pretablet(){
+     width: auto;   
+     text-align: center;
+    }
+
 }
 
 .offer_text-subtitle {
@@ -29,6 +52,9 @@
     font-size: 20px;
     color: #262626;
     text-transform: uppercase;
+    @include pretablet(){
+     text-align: center;   
+    }
 }
 
 .offer_btn {

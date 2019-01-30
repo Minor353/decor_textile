@@ -4,6 +4,11 @@
     display: flex;
     flex-wrap: wrap;
     padding: 100px 0;
+    @include min-desc(){
+        width: 100%;
+        box-sizing: border-box;
+        padding: 100px 30px;
+    }
 }
 
 .reviews_ps {
@@ -15,6 +20,10 @@
     font-family: 'TrajanPro3-Regular';
     font-size: 35px;
     color: #262626;
+    @include min-desc(){
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .reviews_list {
@@ -27,6 +36,9 @@
 .reviews_wrap {
     margin-top: 95px;
     width: 100%;
+    @include min-desc(){
+        margin-top: 50px;
+    }
 }
 
 .reviews_list-item {

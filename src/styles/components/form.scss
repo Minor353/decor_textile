@@ -1,5 +1,10 @@
 .form_wrap-second {
     display: flex;
+    @include min-desc(){
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
     p {
         font-family: 'Raleway-Regular';
         color: #2E2E2E;

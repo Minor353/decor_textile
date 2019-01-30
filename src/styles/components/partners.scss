@@ -3,6 +3,14 @@
     margin: 0 auto;
     display: flex;
     margin-top: 220px;
+    @include min-desc(){
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 30px;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 100px;
+    }
 }
 
 .partners_ps {
@@ -14,12 +22,24 @@
     height: 200px;
     border-right: 5px solid #B0D56A;
     border-bottom: 5px solid #B0D56A;
+    @include min-desc(){
+        width: 45%;
+        height: 60px;
+        border-right: none;
+        margin-bottom: 30px;
+    }
+    @include pretablet(){
+        width: 70%;
+    }
 }
 
 .partners_text-title {
     font-family: 'TrajanPro3-Regular';
     font-size: 35px;
     color: #262626;
+    @include min-desc(){
+        text-align: center;
+    }
 }
 
 .partners_list {
@@ -32,6 +52,11 @@
     justify-content: space-between;
     margin: 0;
     margin-top: -85px;
+    @include min-desc(){
+        margin: 0;
+        padding: 0;
+        width: 70%;
+    }
 }
 
 .partners_list-item {
@@ -39,6 +64,9 @@
     list-style-type: none;
     height: 100px;
     margin-right: 50px;
+    @include pretablet(){
+        margin: 0;
+    }
 }
 
 .partners_list-item:nth-child(3), .partners_list-item:nth-child(6) {

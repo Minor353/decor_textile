@@ -1,11 +1,25 @@
 
 
+$min-desc: 1170px; 
 
+$pretablet: 900px;
 
 $tablet: 768px;
 
 $phone: 480px;
 
+
+@mixin min-desc {
+    @media screen and (max-width:$min-desc) {
+        @content;
+    }
+}
+
+@mixin pretablet {
+    @media screen and (max-width:$pretablet) {
+        @content;
+    }
+}
 
 @mixin tablet {
     @media screen and (max-width:$tablet) {

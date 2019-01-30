@@ -3,6 +3,14 @@
     margin: 0 auto;
     display: flex;
     margin-top: 180px;
+    @include min-desc(){
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 30px;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 70px;
+    }
 }
 
 .clients_text {
@@ -10,6 +18,17 @@
     height: 200px;
     border-left: 5px solid #B0D56A;
     border-bottom: 5px solid #B0D56A;
+
+    @include min-desc(){
+        width: 45%;
+        height: 60px;
+        border-left: none;
+        margin-bottom: 30px;
+    }
+
+    @include pretablet(){
+        width: 70%;
+    }
 }
 
 .clients_text-title {
@@ -17,6 +36,9 @@
     font-size: 35px;
     color: #262626;
     text-align: right;
+    @include min-desc(){
+        text-align: center;
+    }
 }
 
 .clients_list {
@@ -28,6 +50,10 @@
     justify-content: space-between;
     margin: 0;
     margin-top: -85px;
+    @include min-desc(){
+        margin: 0;
+        padding: 0;
+    }
 }
 
 .clients_list-item {
@@ -35,6 +61,9 @@
     list-style-type: none;
     height: 100px;
     margin-right: 50px;
+    @include pretablet(){
+        margin: 0;
+    }
 }
 
 .clients_list-item:nth-child(3), .clients_list-item:nth-child(6) {

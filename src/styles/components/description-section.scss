@@ -3,6 +3,11 @@
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;
+    @include min-desc(){
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 30px;
+    }
 }
 
 .description-section_wrap {
@@ -19,6 +24,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    @include min-desc(){
+        width: 48%;
+    }
     h5 {
         font-family: 'TrajanPro3-Regular';
         font-size: 35px;
@@ -26,11 +34,17 @@
         line-height: 49px;
         margin: auto 0;
         margin-left: 50px;
+        @include min-desc(){
+            font-size: 28px;
+        }
     }
 }
 
 .description-section_content {
     width: 600px;
+    @include min-desc(){
+        width: 48%;
+    }
 }
 
 .description-section_content-text {

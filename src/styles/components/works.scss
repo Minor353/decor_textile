@@ -5,6 +5,13 @@
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 100px;
+
+    @include min-desc(){
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 30px;
+        margin-bottom: 50px;
+    }
 }
 
 .works_title {
@@ -12,10 +19,19 @@
     font-family: 'TrajanPro3-Regular';
     color: #2A2A2A;
     font-size: 35px;
+    @include min-desc(){
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
 }
 
 .works_tabs-wrap {
     width: 70%;
+    @include min-desc(){
+        width: 100%;
+        margin-bottom: 35px;
+    }
 }
 
 .works_tabs {
@@ -23,10 +39,20 @@
     margin: 0;
     display: flex;
     justify-content: flex-end;
+    @include min-desc(){
+        justify-content: center;
+    }
+    @include mobile(){
+        flex-wrap: wrap;
+    }
 }
 
 .works_tabs-item {
     list-style-type: none;
+    @include mobile(){
+        padding: 10px 10px;
+    }
+    
 }
 
 .works_tabs-item-link {
@@ -38,6 +64,9 @@
     margin-left: 30px;
     transition: 0.5s;
     cursor: pointer;
+    @include mobile(){
+        margin-left: 0;
+    }
 }
 
 .works_tabs-item-link:hover {
@@ -55,15 +84,32 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
+}
+
+@media screen and (max-width: 910px) {
+    .works_gallery-wrap {
+    justify-content: space-around;
+}
 }
 
 .works_gallery-item {
     list-style-type: none;
     box-shadow: 0px 10px 15px rgba(71, 71, 71, 0.2);
+    overflow: hidden;
+    @include min-desc(){
+        margin-bottom: 15px;
+    }
     img {
         width: 100%;
         height: 100%;
+        transition: 0.4s;
     }
+}
+
+.works_gallery-item:hover img {
+    transform: scale3d(1.1, 1.1, 1.1);
+    transition: 0.4s;
 }
 
 .works_gallery-item:nth-child(1) {
@@ -73,25 +119,48 @@
 
 .works_gallery-item:nth-child(2) {
     width: 280px;
+    @include min-desc(){
+        width: 280px;
+        height: 265px;
+    }
 }
 
 .works_gallery-item:nth-child(3) {
     width: 576px;
     height: 265px;
+    @include min-desc(){
+        width: 280px;
+        height: 265px;
+    }
 }
 
 .works_gallery-item:nth-child(4) {
     width: 280px;
     margin-top: -270px;
+    @include min-desc(){
+        width: 280px;
+        height: 265px;
+        margin: 0;
+    }
 }
 
 .works_gallery-item:nth-child(5) {
     width: 280px;
     margin-left: 300px;
     margin-top: -270px;
+    @include min-desc(){
+        width: 280px;
+        height: 265px;
+        margin: 0;
+    }
 }
 
 .works_gallery-item:nth-child(6) {
     width: 280px;
     margin-top: -270px;
+    @include min-desc(){
+        width: 280px;
+        height: 265px;
+        margin: 0;
+    }
 }

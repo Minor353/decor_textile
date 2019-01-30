@@ -2,6 +2,12 @@
     width: 1170px;
     margin: 0 auto;
     padding-bottom: 60px;
+    @include min-desc(){
+        width: 100%;
+        padding: 0 30px;
+        padding-bottom: 60px;
+        box-sizing: border-box;
+    }
 }
 
 .features_text-title {
@@ -9,6 +15,11 @@
     font-family: 'TrajanPro3-Regular';
     font-size: 35px;
     color: #262626;
+    
+    font-size: 28px;
+    @include mobile(){
+        font-size: 22px;
+    }
 }
 
 .features_text-article {
@@ -17,6 +28,9 @@
     color: #262626;
     line-height: 30px;
     margin-bottom: 65px; 
+    @include mobile(){
+        font-size: 14px;
+    }
 }
 
 .features_text-decor {
@@ -24,6 +38,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @include min-desc(){
+        justify-content: space-around;
+    }
 }
 
 .features_decor-item {
@@ -35,6 +52,20 @@
     box-sizing: border-box;
     position: relative;
     display: flex;
+    top: 0;
+    transition: 0.4s;
+    @include min-desc(){
+        margin-bottom: 65px;
+    }
+    @include mobile(){
+        width: 80%;
+    }
+}
+
+.features_decor-item:hover {
+    top: -10px;
+    box-shadow: 0px 20px 30px rgba(55, 55, 55, 0.2);
+    transition: 0.4s;
 }
 
 .features_decor-item-img {
@@ -84,6 +115,9 @@
 
 .features_decor-item:nth-child(1), .features_decor-item:nth-child(2), .features_decor-item:nth-child(3), .features_decor-item:nth-child(4) {
     margin-bottom: 115px;
+    @include min-desc(){
+        margin-bottom: 65px;
+    }
 }
 
 .features_decor-item-text {
@@ -92,4 +126,7 @@
     color: #2E2E2E;
     line-height: 18px;
     margin: auto 0;
+    @include mobile(){
+        font-size: 18px;
+    }
 }

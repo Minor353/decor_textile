@@ -4,6 +4,10 @@
     color: #2E2E2E;
     margin: 100px 0;
     text-align: center;
+    @include min-desc(){
+        font-size: 28px;
+        margin: 70px 0;
+    }
 }
 
 .map_wrap {

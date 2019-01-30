@@ -1,3 +1,11 @@
+.gallery_ps {
+    @include min-desc(){
+        background-image: url('../images/icons/Repeat Grid 12.svg');
+        background-position: center;
+        padding-top: 35px;
+    }
+}
+
 .gallery_wrap {
     width: 1170px;
     margin: 0 auto;
@@ -5,6 +13,13 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 100px;
+    @include min-desc(){
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 30px;
+        flex-direction: column;
+        margin-bottom: 35px;
+    }
 }
 
 .gallery_title {
@@ -13,12 +28,25 @@
     color: #2E2E2E;
     line-height: 49px;
     margin: 0;
+    @include min-desc(){
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+}
+
+.gallery_tabs {
+    @include min-desc(){
+        width: 100%;
+    }
 }
 
 .gallery_tabs-wrap {
     display: flex;
     padding: 0;
     margin: 0;
+    @include min-desc(){
+        justify-content: space-between;
+    }
 }
 
 .gallery_tabs-item {
@@ -27,10 +55,20 @@
     font-size: 16px;
     color: #262626;
     margin-left: 30px;
+    
+}
+
+.gallery_tabs-wrap .gallery_tabs-item {
+    @include min-desc(){
+        margin-left: 0;
+    }
 }
 
 .gallery_list {
     height: 300px;
+    @include pretablet(){
+       height: 200px;
+    }
 }
 
 .gallery_list-wrap {
@@ -95,4 +133,5 @@
     opacity: 1;
     transition: 0.4s;
     cursor: pointer;
+    pointer-events: none;
 }
