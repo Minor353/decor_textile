@@ -15,6 +15,10 @@
         padding: 0 30px;
         box-sizing: border-box;
     }
+    @include maxphone(){
+        width: auto;
+    }
+    
 }
 
 .main-section_name {
@@ -28,10 +32,17 @@
     font-family: 'TrajanPro3-Regular';
     font-size: 35px;
     color: #fff;
+
+    @include mobile(){
+        font-size: 22px;
+    }
 }
 
 .main-section_description {
     font-family: 'Raleway-Regular';
     font-size: 16px;
     color: #fff;
+    @include mobile(){
+        font-size: 14px;
+    }
 }

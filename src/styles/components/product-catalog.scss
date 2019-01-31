@@ -18,6 +18,9 @@
     @include min-desc(){
         margin-bottom: 30px;
     }
+    @include maxphone(){
+        font-size: 28px;
+    }
 }
 
 .product-catalog_list {
@@ -27,6 +30,9 @@
     flex-wrap: wrap;
     @include min-desc(){
         justify-content: space-around;
+    }
+    @include maxphone(){
+        flex-direction: column;
     }
 }
 
@@ -39,6 +45,9 @@
     border-right: 3px solid #fff;
     @include min-desc(){
         width: 48%;
+    }
+    @include maxphone(){
+        width: 100%;
     }
 }
 
@@ -74,6 +83,12 @@
     position: relative;
     margin-top: -86px;
     transition: 0.4s;
+    @include maxphone(){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+    }
 }
 
 .product-catalog_item-title:hover {

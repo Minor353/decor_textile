@@ -54,6 +54,10 @@
     @include min-desc(){
         font-size: 28px;
     }
+    @include minphone(){
+        font-size: 22px;
+        margin-top: 45px;
+    }
 }
 
 .catalog_item-img {
@@ -83,6 +87,9 @@
     margin-top: -83px;
     position: relative;
     transition: 0.4s;
+    @include minphone(){
+        font-size: 16px;
+    }
 }
 
 .catalog_item:hover  .catalog_item-text {

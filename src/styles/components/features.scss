@@ -41,6 +41,9 @@
     @include min-desc(){
         justify-content: space-around;
     }
+    @include minphone(){
+        margin-top: 60px;
+    }
 }
 
 .features_decor-item {
@@ -60,6 +63,13 @@
     @include mobile(){
         width: 80%;
     }
+    @include minphone(){
+        width: 100%;
+        padding: 10px;
+        align-items: center;
+        height: auto;
+        margin-bottom: 15px;
+    }
 }
 
 .features_decor-item:hover {
@@ -74,6 +84,11 @@
     width: 80px;
     height: 80px;
     background-color: #C01C3F;
+    @include minphone(){
+        position: static;
+        margin-right: 10px;
+        min-width: 80px;
+    }
 }
 
 .features_decor-item-img {
@@ -118,6 +133,9 @@
     @include min-desc(){
         margin-bottom: 65px;
     }
+    @include minphone(){
+        margin-bottom: 15px;
+    }
 }
 
 .features_decor-item-text {
@@ -128,5 +146,8 @@
     margin: auto 0;
     @include mobile(){
         font-size: 18px;
+    }
+    @include minphone(){
+        font-size: 14px;
     }
 }

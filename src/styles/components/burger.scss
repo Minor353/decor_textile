@@ -13,6 +13,9 @@
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    @include minphone(){
+        width: 60px;
+    }
   }
   .hamRotate.active {
     transform: rotate(45deg);

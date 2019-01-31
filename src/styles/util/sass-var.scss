@@ -6,7 +6,11 @@ $pretablet: 900px;
 
 $tablet: 768px;
 
-$phone: 480px;
+$maxphone: 730px;
+
+$phone: 500px;
+
+$minphone: 450px;
 
 
 @mixin min-desc {
@@ -27,8 +31,20 @@ $phone: 480px;
     }
 }
 
+@mixin maxphone {
+    @media screen and (max-width:$maxphone) {
+        @content;
+    }
+}
+
 @mixin mobile {
     @media screen and (max-width:$phone) {
+        @content;
+    }
+}
+
+@mixin minphone {
+    @media screen and (max-width:$minphone) {
         @content;
     }
 }

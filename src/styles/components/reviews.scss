@@ -24,6 +24,9 @@
         width: 100%;
         text-align: center;
     }
+    @include minphone(){
+        font-size: 28px;
+    }
 }
 
 .reviews_list {
@@ -44,6 +47,7 @@
 .reviews_list-item {
     list-style-type: none;
     width: 380px;
+    margin: 0 20px;
 }
 
 .reviews_item-text {

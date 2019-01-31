@@ -76,6 +76,9 @@
     @include pretablet(){
         top: 65%;
     }
+    @include minphone(){
+        top: 75%;
+    }
 }
 
 .main-slider_control-btn {

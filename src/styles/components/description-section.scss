@@ -8,12 +8,18 @@
         box-sizing: border-box;
         padding: 0 30px;
     }
+    @include maxphone(){
+        margin: 50px 0;
+    }
 }
 
 .description-section_wrap {
     display: flex;
     justify-content: space-between;
     align-content: center;
+    @include maxphone(){
+        flex-direction: column;
+    }
 }
 
 .description-section_title {
@@ -27,6 +33,10 @@
     @include min-desc(){
         width: 48%;
     }
+    @include maxphone(){
+        width: 100%;
+        margin-bottom: 30px;
+    }
     h5 {
         font-family: 'TrajanPro3-Regular';
         font-size: 35px;
@@ -37,6 +47,9 @@
         @include min-desc(){
             font-size: 28px;
         }
+        @include maxphone(){
+            margin: auto;
+        }
     }
 }
 
@@ -44,6 +57,9 @@
     width: 600px;
     @include min-desc(){
         width: 48%;
+    }
+    @include maxphone(){
+        width: 100%;
     }
 }
 
@@ -59,6 +75,9 @@
     font-weight: 700;
     color: #C01C3F;
     font-size: 24px;
+    @include mobile(){
+        font-size: 18px;
+    }
 }
 
 .description-section_item-text {
@@ -66,10 +85,16 @@
     font-weight: 700;
     color: #262626;
     font-size: 16px;
+    @include mobile(){
+        font-size: 14px;
+    }
 }
 
 .description-section_content-date {
     display: flex;
     justify-content: space-between;
     margin-top: 39px;
+    @include maxphone(){
+        justify-content: space-around;
+    }
 }

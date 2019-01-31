@@ -8,6 +8,9 @@
     @include pretablet(){
         margin-bottom: 45px;
     }
+    @include mobile(){
+        display: flex;
+    }
 }
 
 .contact-date_list-item:hover {
@@ -25,6 +28,10 @@
     margin-bottom: -40px;
     img {
         margin: auto;
+    }
+    @include mobile(){
+        margin: 0;
+        height: auto;
     }
 }
 
@@ -86,5 +93,9 @@
     }
     @include pretablet(){
         width: 450px;
+    }
+    @include mobile(){
+        width: auto;
+        padding: 30px;
     }
 }

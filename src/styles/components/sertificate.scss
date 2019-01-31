@@ -15,6 +15,10 @@
     text-align: center;
     margin-top: 100px;
     margin-bottom: 100px;
+    @include mobile(){
+        font-size: 28px;
+        margin: 50px 0;
+    }
 }
 
 .sertificate_list {
@@ -25,6 +29,10 @@
     @include min-desc(){
         flex-wrap: wrap;
     }
+    @include mobile(){
+        flex-direction: column;
+
+    }
 }
 
 .sertificate_list-item {
@@ -34,6 +42,9 @@
     @include min-desc(){
         width: 48%;
         margin-bottom: 20px;
+    }
+    @include mobile(){
+        width: 100%;
     }
     img {
         width: 100%;

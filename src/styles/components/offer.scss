@@ -44,6 +44,9 @@
      width: auto;   
      text-align: center;
     }
+    @include minphone(){
+        font-size: 22px;
+    }
 
 }
 
@@ -54,6 +57,9 @@
     text-transform: uppercase;
     @include pretablet(){
      text-align: center;   
+    }
+    @include minphone(){
+        font-size: 18px;
     }
 }
 

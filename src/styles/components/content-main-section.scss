@@ -4,6 +4,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px 0;
+    @include tablet(){
+        padding: 30px;
+    }
 }
 
 
@@ -14,6 +17,9 @@
     text-align: center; 
     @include min-desc(){
         width: 650px;
+    }
+    @include tablet(){
+        width: auto;
     }
 }
 
@@ -35,6 +41,11 @@
     color: #fff;
     line-height: 49px;
     margin-bottom: 50px;
+    @include mobile(){
+        font-size: 28px;
+        margin-bottom: 25px;
+        line-height: 34px;
+    }
 }
 
 .content-main-section_subtitle {

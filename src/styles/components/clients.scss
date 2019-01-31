@@ -29,6 +29,9 @@
     @include pretablet(){
         width: 70%;
     }
+    @include mobile(){
+        width: 100%;
+       }
 }
 
 .clients_text-title {
@@ -38,6 +41,9 @@
     text-align: right;
     @include min-desc(){
         text-align: center;
+    }
+    @include minphone(){
+        font-size: 28px;
     }
 }
 
@@ -54,6 +60,10 @@
         margin: 0;
         padding: 0;
     }
+    @include mobile(){
+        justify-content: center;
+        height: auto;
+       }
 }
 
 .clients_list-item {
@@ -63,6 +73,9 @@
     margin-right: 50px;
     @include pretablet(){
         margin: 0;
+    }
+    @include mobile(){
+        margin-bottom: 10px;
     }
 }
 
