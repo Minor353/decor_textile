@@ -54,8 +54,16 @@
     list-style-type: none;
     @include mobile(){
         padding: 10px 10px;
+    }   
+}
+
+
+
+
+.works_tabs-item--active {
+    .works_tabs-item-link {
+        color: #B0D56A;
     }
-    
 }
 
 .works_tabs-item-link {
@@ -87,10 +95,17 @@
 .works_gallery-wrap {
     padding: 0;
     margin: 0;
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
+    display: none;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.works_gallery-wrap--active {
+    display: flex;
+    opacity: 1;
+    transition: 0.4s;
 }
 
 @media screen and (max-width: 910px) {

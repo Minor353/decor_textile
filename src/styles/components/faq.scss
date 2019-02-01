@@ -61,7 +61,7 @@
 }
 
 .faq_list-item-content {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     @include mobile(){
         margin-bottom: 15px;
     }
@@ -87,15 +87,21 @@
     color: #929292;
     font-size: 16px;
     line-height: 30px;
-    padding: 20px 50px;
+    padding: 0;
+    height: 0;
+    overflow: hidden;
     background-color: rgba(132, 224, 143, 0.15);
+    transition: 0.3s;
     @include mobile(){
         padding: 20px;
     }
 }
 
-.faq_list-content-text--disable {
-    display: none;
+.faq_list-content-text--active {
+    height: auto;
+    padding: 20px 50px;
+    overflow: visible;
+    transition: 0.3s;
 }
 
 
